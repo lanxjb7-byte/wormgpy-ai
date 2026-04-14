@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const app = express();
 app.use(express.json());
 
-const API_KEY = "ISI_API_KEY_KAMU";
+const API_KEY = process.env.OPENAI_API_KEY";
 
 app.get("/", (req, res) => {
   res.send("🔥 WORMGPY AI AKTIF 🔥");
